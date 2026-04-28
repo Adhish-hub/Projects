@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.menu-container {
+    font-family: "Cedarville Cursive";
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+
+
+.menu-container {
+    grid-column: span 2;
+}
+
+
+div {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px
+}
+
+
+div h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+
+li {
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px;
+    background-color: beige;
+    border-radius : 5px;
+  
+}
+
+li:hover {
+    background-color: brown;
+    
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .menu-container {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    div {
+        padding: 10px;
+    }
+
+    li {
+        font-size: 14px;
+        padding: 8px;
+    }}
